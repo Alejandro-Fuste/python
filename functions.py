@@ -20,3 +20,19 @@ def function_with_vararg(*args: int) -> int:
 
 print(function_with_vararg(1, 2, 3, 4))
 # print(function_with_vararg(1, 2, 'three', 4)) your interpreter will try to run this, but will give type error
+
+# you can also put in keywords arguments by adding * in front of the parameter name
+
+def function_with_kwargs(**kwargs):
+    print(kwargs['username'])
+    print(kwargs['password'])
+
+function_with_kwargs(username='Dro', password='test')
+
+def another_kwarg_function(**kwargs):
+    for key, value in kwargs.items():
+        print(f'the key is {key} and the value is {value}')
+
+another_kwarg_function(name="Eric", profession="Trainer")
+
+
