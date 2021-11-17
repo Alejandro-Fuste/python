@@ -1,11 +1,12 @@
 # In python there are NO primitives: only objects
 from abc import ABC, abstractmethod
 
-my_small_number = 1
-print(type(my_small_number))
 
-another_small_number = 1.1
-print(type(another_small_number))
+# my_small_number = 1
+# print(type(my_small_number))
+#
+# another_small_number = 1.1
+# print(type(another_small_number))
 
 # Most common data type string, number, float, boolean
 
@@ -50,15 +51,24 @@ print(type(another_small_number))
 #         def my_abstract_method(self):
 #             pass
 
-class HasFunction:
+
+class Person:
     def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
 
-    def __repr__(self):
-        # return f'My name is {self.name} and I am {self.age} years old.'
+    @abstractmethod
+    def speak(self):
+        pass
 
 
-new_function = HasFunction('Alejandro', 12)
-print(new_function)
+class Adult(Person):
+    def __init__(self, name: str, age: int):
+        super().__init__(name, age)
+
+    def speak(self):
+        return "Hello! My name is {} and I am {} years old".format(self.name, self.age)
+
+adult = Adult("Eric", 127)
+print(adult.speak())
 
