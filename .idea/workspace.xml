@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e0882b-4768-4764-b06e-0a00c387cd00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Testing/python_testing_basics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/test_calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Servers_with_flask/flask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +176,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
